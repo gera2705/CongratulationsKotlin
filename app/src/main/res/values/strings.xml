@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CongratulationsKotlin</string>
+    <string name="app_name">Congratulations</string>
+
+    <string name="menu_title_home">Главная</string>
+    <string name="menu_title_search">Поиск</string>
+    <string name="menu_title_calendar">Календарь</string>
+    <string name="menu_title_favorite">Избранное</string>
 </resources>
