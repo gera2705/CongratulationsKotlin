@@ -5,4 +5,50 @@
     <string name="menu_title_search">Поиск</string>
     <string name="menu_title_calendar">Календарь</string>
     <string name="menu_title_favorite">Избранное</string>
+
+    <string name="scroll_view_text">На любой повод</string>
+    <string name="search">Поиск</string>
+    <string name="search_subtitle">Находите уникальные поздравления из\nпостоянно обновляющейся базы с лучшими\nпожеланиями</string>
+    <string name="holiday_name">Название события*</string>
+    <string name="holiday_name_hint">Например, Пасха</string>
+    <string name="gender">Пол</string>
+    <string name="gender_hint">Выберите пол</string>
+    <string name="human_name">Имя</string>
+    <string name="human_name_hint">Введите имя</string>
+    <string name="favorite_title">Избранное</string>
+    <string name="favorite_subtitle">Сохраненные Вами поздравления хранятся\nв этом разделе</string>
+    <string name="favorite_bottom_subtitle">Пока вы не сохранили ни одного\nпоздравления. Попробуйте найти\nпоздравление на ближайший повод и\nсохраните его, чтобы не потерять</string>
+    <string name="favorite_search_button">Найти поздравление</string>
+    <string name="favorite_to_home_button">На главную</string>
+    <string name="add_result_title">Добавлено\nв календарь</string>
+    <string name="add_result_subtitle">Ваш календарь праздников обновлён.\nТеперь вы можете проверить его или\nдобавить ещё парочку событий</string>
+    <string name="add_result_to_main_button">На главную</string>
+    <string name="add_result_add_more_button">Добавить еще</string>
+    <string name="search_result_title">Результаты</string>
+    <string name="search_result_counter">Найдено:</string>
+    <string name="search_result_back_button_hint">Назад к фильтру</string>
+    <string name="search_result_second_counter">1/25</string>
+    <string name="home_card_one">День\nРождения</string>
+    <string name="home_card_two">Годовщина\nсвадьбы</string>
+    <string name="home_card_three">Рождение\nребенкка</string>
+    <string name="home_card_four">День\nучителя</string>
+
+    <string name="home_card_one_text">День Рождения</string>
+    <string name="home_card_two_text">Годовщина свадьбы</string>
+    <string name="home_card_three_text">Рождение ребенкка</string>
+    <string name="home_card_four_text">День учителя</string>
+
+    <string name="found_button_text">Найти поздравление</string>
+    <string name="date_of_the_holiday">12\n02</string>
+    <string name="name_of_the_holiday">День оперативного работника уголовно-исполнительной системы</string>
+    <string name="today_is">Сегодня, число месяц</string>
+
+    <string name="date">Сегодня, %1$s %2$s</string>
+    <string name="big_date">%1$s\n%2$s</string>
+
+    <string name="counter_text">%1$d/%2$d</string>
+    <string name="dialog_title">Выберите праздник</string>
+    <string name="dialog_subtitle">Поиск</string>
+    <string name="search_res_small_counter_text" >Найдено: %1$d</string>
+    <string name="search_res_congratulation_text">%1$s!\n%2$s</string>
 </resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context="ui.search.SearchFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="42dp"
+        android:layout_height="52dp"
+        android:background="@drawable/ic_logo"
+        android:contentDescription="@string/search_subtitle"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal" />
+
+    <ImageButton
+        android:id="@+id/question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_question"
+        android:contentDescription="@string/search_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal" />
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/georgia_bold"
+        android:text="Добавить праздник"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/search_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mont_regular"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Добавьте новую значимую дату, а мы вам напомним о ней :)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/search_title" />
+
+    <TextView
+        android:id="@+id/holiday_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/mont_regular"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/holiday_name"
+        android:textColor="@color/primary_1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/search_subtitle" />
+
+    <EditText
+        android:id="@+id/holiday_name_edit_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_text_view"
+        android:fontFamily="@font/mont_regular"
+        android:hint="Например, Именины Тани"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/primary_1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/holiday_name_text_view" />
+
+    <TextView
+        android:id="@+id/gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mont_regular"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Дата события*"
+        android:textColor="@color/primary_1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/holiday_name_edit_view" />
+
+    <TextView
+        android:id="@+id/add_calendar_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_text_view"
+        android:fontFamily="@font/mont_regular"
+        android:hint="Дата"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/primary_1"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_calendar"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/gender_text_view" />
+
+    <TextView
+        android:id="@+id/human_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mont_regular"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Краткое описание"
+        android:textColor="@color/primary_1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/add_calendar_spinner" />
+
+    <EditText
+        android:id="@+id/add_description_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="@string/human_name_hint"
+        android:background="@drawable/custom_text_view"
+        android:fontFamily="@font/mont_regular"
+        android:hint="Ваше описание"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:textColorHint="@color/primary_1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/human_name_text_view" />
+
+    <TextView
+        android:id="@+id/remind_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Напоминанать\nо событии"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/add_description_edit_text" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/remind_me"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+        app:layout_constraintTop_toTopOf="@+id/remind_me" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_congratulation_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_2"
+        android:fontFamily="@font/mont_regular"
+        android:padding="15dp"
+        android:text="Добавить"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/remind_me" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

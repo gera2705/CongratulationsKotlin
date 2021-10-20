@@ -9,12 +9,28 @@
         android:id="@+id/homeFragment"
         android:name="com.kolosov.congratulations.ui.home.HomeFragment"
         android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.kolosov.congratulations.ui.search.SearchFragment"
         android:label="search_fragment"
-        tools:layout="@layout/search_fragment" />
+        tools:layout="@layout/search_fragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+        <argument
+            android:name="holidayName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.kolosov.congratulations.ui.calendar.CalendarFragment"
@@ -24,10 +40,48 @@
         android:id="@+id/favouritesFragment"
         android:name="com.kolosov.congratulations.ui.favourites.FavouritesFragment"
         android:label="favourites_fragment"
-        tools:layout="@layout/favourites_fragment" />
+        tools:layout="@layout/favourites_fragment" >
+        <action
+            android:id="@+id/action_favouritesFragment_to_favoritesTextFragment"
+            app:destination="@id/favoritesTextFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.kolosov.congratulations.ui.add.AddFragment"
         android:label="add_fragment"
-        tools:layout="@layout/add_fragment" />
+        tools:layout="@layout/add_fragment" >
+        <action
+            android:id="@+id/action_addFragment_to_addResultFragment"
+            app:destination="@id/addResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addResultFragment"
+        android:name="com.kolosov.congratulations.ui.add.AddResultFragment"
+        android:label="add_result_fragment"
+        tools:layout="@layout/add_result_fragment" >
+        <action
+            android:id="@+id/action_addResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesTextFragment"
+        android:name="com.kolosov.congratulations.ui.favourites.FavoritesTextFragment"
+        android:label="favorites_text_fragment"
+        tools:layout="@layout/favorites_text_fragment" >
+        <argument
+            android:name="FavoritesText"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.kolosov.congratulations.ui.search.SearchResultFragment"
+        android:label="search_result_fragment"
+        tools:layout="@layout/search_result_fragment" >
+        <argument
+            android:name="holidayName"
+            app:argType="string" />
+        <argument
+            android:name="humanName"
+            app:argType="string" />
+    </fragment>
 </navigation>
