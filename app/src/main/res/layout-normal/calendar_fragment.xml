@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context="ui.calendar.CalendarFragment">
+
+    <ScrollView
+        android:id="@+id/calendar_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="24dp" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="42dp"
+                android:layout_height="52dp"
+                android:background="@drawable/ic_logo"
+                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal" />
+
+            <ImageButton
+                android:id="@+id/question_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_question"
+                app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal" />
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_button"
+                android:theme="@style/DialogTheme"
+                app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@id/logo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/search_button_on_calendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark_grey"
+                android:drawableEnd="@drawable/ic_search"
+                android:fontFamily="@font/mont_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:text="Найти поздравление"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:cornerRadius="35dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/calendar" />
+
+            <ImageButton
+                android:id="@+id/back_description_arrow_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@color/main_color"
+                android:src="@drawable/ic_left_arrow"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_result_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/search_button_on_calendar" />
+
+            <ImageButton
+                android:id="@+id/forward_description_arrow_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_right_arrow"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_result_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+                app:layout_constraintTop_toBottomOf="@+id/search_button_on_calendar" />
+
+            <TextView
+                android:id="@+id/result_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFC47D"
+                android:fontFamily="@font/mont_regular"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:text="1/25"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_result_text"
+                app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
+                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/search_button_on_calendar" />
+
+
+            <TextView
+                android:id="@+id/calendar_result_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:background="@color/dark_blue"
+                android:fontFamily="@font/mont_regular"
+                android:lineSpacingMultiplier="1.75"
+                android:padding="10dp"
+                android:text="Описание праздника"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/result_counter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="main_color">#829ADA</color>
+    <color name="light_blue">#99AFEC</color>
+    <color name="vedium_blue">#798ECA</color>
+    <color name="dark_blue">#6379B4</color>
+    <color name="primary_1">#C2D2FF</color>
+    <color name="dark_grey">#363636</color>
+    <color name="primary_2">#FFC47D</color>
+    <color name="no_active">#CCCCCC</color>
+    <color name="primary_3">#F973CB</color>
+    <color name="home_card">#FFD8D8</color>
+    <color name="pink"> #F973CB</color>
 </resources>
