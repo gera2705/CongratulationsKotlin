@@ -33,28 +33,33 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-large/add_fragment.xml" value="0.3125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-large/add_result_fragment.xml" value="0.18442622950819673" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-large/home_fragment.xml" value="0.3125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-large/list_row.xml" value="0.10177595628415301" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-large/search_fragment.xml" value="0.3125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/activity_main.xml" value="0.16052631578947368" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/add_fragment.xml" value="0.176" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/add_fragment.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/add_result_fragment.xml" value="0.16052631578947368" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/calendar_fragment.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/favorites_text_fragment.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/favourites_fragment.xml" value="0.12021857923497267" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/home_fragment.xml" value="0.17330210772833723" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/list_row.xml" value="0.10177595628415301" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/search_fragment.xml" value="0.176" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/search_fragment.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-normal/search_result_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-small/add_fragment.xml" value="0.4901315789473684" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-small/add_result_fragment.xml" value="0.16052631578947368" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-small/home_fragment.xml" value="0.5805921052631579" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-small/list_row.xml" value="0.10177595628415301" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-small/search_result_fragment.xml" value="0.4901315789473684" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-xlarge/add_result_fragment.xml" value="0.18442622950819673" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-xlarge/home_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout-xlarge/list_row.xml" value="0.10177595628415301" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/add_fragment.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/calendar_fragment.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/dialog_search_spinner.xml" value="0.10177595628415301" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/favourites_fragment.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/home_fragment.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/list_row.xml" value="0.10177595628415301" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/search_fragment.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/search_result_fragment.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/CongratulationsKotlin/app/src/main/res/layout/slider_item.xml" value="0.2" />

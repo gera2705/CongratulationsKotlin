@@ -79,7 +79,7 @@
         android:id="@+id/holiday_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/mont_regular"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
