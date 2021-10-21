@@ -32,6 +32,5 @@ class FavoriteRecyclerAdapter(private val arrayList: List<String>, private val c
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var cardTextView: TextView = itemView.findViewById(R.id.card_text_view)
-
     }
 }

@@ -4,7 +4,6 @@ import android.app.Dialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,11 +17,6 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.kolosov.congratulations.R
 import com.kolosov.congratulations.data.CongratulationDataBase
 import com.kolosov.congratulations.databinding.SearchFragmentBinding
-import com.kolosov.congratulations.ui.favourites.FavoritesTextFragmentArgs
-import java.lang.Error
-import java.lang.RuntimeException
-import java.util.ArrayList
-
 
 class SearchFragment : Fragment() {
 
@@ -42,13 +36,8 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        try {
-            val arg: SearchFragmentArgs? by navArgs()
-            binding.holidayNameEditView?.text = arg?.holidayName
-        }catch (e: IllegalAccessException){
-
-        }
-
+        val arg: SearchFragmentArgs? by navArgs()
+        binding.holidayNameEditView?.text = arg?.holidayName
 
         val db: CongratulationDataBase? =
             CongratulationDataBase.getDbInstance(this.requireContext())
@@ -56,8 +45,6 @@ class SearchFragment : Fragment() {
         nameList = db?.congratulationDao()?.getAllNames()
 
         initListeners()
-
-
     }
 
     private fun initListeners() {

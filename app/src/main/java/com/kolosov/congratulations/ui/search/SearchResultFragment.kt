@@ -1,11 +1,12 @@
 package com.kolosov.congratulations.ui.search
 
-import android.content.*
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
+import android.content.Intent
 import android.database.sqlite.SQLiteException
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,12 +15,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.google.gson.Gson
 import com.kolosov.congratulations.R
 import com.kolosov.congratulations.data.CongratulationDataBase
 import com.kolosov.congratulations.data.entitys.Favorites
 import com.kolosov.congratulations.databinding.SearchResultFragmentBinding
-import com.kolosov.congratulations.ui.favourites.FavouritesFragment
 
 class SearchResultFragment : Fragment() {
 
@@ -41,7 +40,6 @@ class SearchResultFragment : Fragment() {
 
         val db: CongratulationDataBase? =
             CongratulationDataBase.getDbInstance(this.requireContext())
-
 
         init(db)
 

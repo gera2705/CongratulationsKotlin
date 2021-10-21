@@ -51,4 +51,17 @@
     <string name="dialog_subtitle">Поиск</string>
     <string name="search_res_small_counter_text" >Найдено: %1$d</string>
     <string name="search_res_congratulation_text">%1$s!\n%2$s</string>
+    <string name="add_title">Добавить праздник</string>
+    <string name="add_subtitle">Добавьте новую значимую дату, а мы вам напомним о ней :)</string>
+    <string name="add_holiday_name_hint">Например, Именины Тани</string>
+    <string name="add_date">Дата события*</string>
+    <string name="add_date_hint">Дата</string>
+    <string name="add_description">Краткое описание</string>
+    <string name="add_description_hint">Ваше описание</string>
+    <string name="add_notification_hint">Напоминанать\nо событии</string>
+    <string name="add_button_text">Добавить</string>
+    <string name="calendar_text_hint">Описание праздника</string>
+    <string name="calendar_button_text">Найти поздравление</string>
+    <string name="fav_text_title">Избранное</string>
+    <string name="fav_text_back_hint">Назад к списку</string>
 </resources>

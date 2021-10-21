@@ -6,9 +6,6 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.kolosov.congratulations.data.entitys.Congratulation
 import com.kolosov.congratulations.data.entitys.Favorites
-import io.reactivex.rxjava3.core.Flowable
-import io.reactivex.rxjava3.core.Single
-
 
 @Dao
 interface CongratulationDao {
@@ -36,5 +33,4 @@ interface CongratulationDao {
 
     @Delete
     fun deleteFavorites(key: Favorites)
-
 }

@@ -82,7 +82,7 @@
                 android:paddingTop="15dp"
                 android:paddingEnd="25dp"
                 android:paddingBottom="15dp"
-                android:text="Найти поздравление"
+                android:text="@string/calendar_button_text"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="18sp"
@@ -127,14 +127,14 @@
                 android:paddingTop="10dp"
                 android:paddingRight="20dp"
                 android:paddingBottom="8dp"
-                android:text="1/25"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="23sp"
                 app:layout_constraintBottom_toTopOf="@+id/calendar_result_text"
                 app:layout_constraintEnd_toStartOf="@id/guideline_vertical_end"
                 app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/search_button_on_calendar" />
+                app:layout_constraintTop_toBottomOf="@+id/search_button_on_calendar"
+                tools:text="1/25" />
 
 
             <TextView
@@ -146,7 +146,7 @@
                 android:fontFamily="@font/mont_regular"
                 android:lineSpacingMultiplier="1.75"
                 android:padding="10dp"
-                android:text="Описание праздника"
+                android:text="@string/calendar_text_hint"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
