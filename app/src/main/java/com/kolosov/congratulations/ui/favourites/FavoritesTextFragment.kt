@@ -76,7 +76,4 @@ class FavoritesTextFragment : Fragment() {
             ).show()
         }
     }
-
-
-
 }

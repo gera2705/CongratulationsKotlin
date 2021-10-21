@@ -1,7 +1,6 @@
 package com.kolosov.congratulations.ui.utils
 
 import android.content.Context
-import android.content.res.Resources
 import com.kolosov.congratulations.R
 import java.text.DateFormat
 import java.text.SimpleDateFormat
@@ -27,7 +26,7 @@ object CustomDateFormat {
     private var dateArray: Array<String>? = null
 
     private fun checkFormat() {
-        if (dateArray!![1]!!.toInt() < 10) {
+        if (dateArray!![1].toInt() < 10) {
             dateArray!![1] = "0" + dateArray!![1]
         }
         if (dateArray!![0].toInt() < 10) {
@@ -60,7 +59,7 @@ object CustomDateFormat {
         return dateFormat.format(currentDate)
     }
 
-    private fun getMonth(monthNumber: Int): String? {
+    private fun getMonth(monthNumber: Int): String {
         return month[monthNumber - 1]
     }
 }

@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import com.kolosov.congratulations.R
 import com.smarteist.autoimageslider.SliderViewAdapter
-import java.util.*
 
 class SliderAdapter(
     var names: List<String>?,

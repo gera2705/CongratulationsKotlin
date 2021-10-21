@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/georgia_bold"
-        android:text="Избранное"
+        android:text="@string/fav_text_title"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
@@ -76,7 +76,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="19dp"
         android:fontFamily="@font/mont_regular"
-        android:text="Назад к списку"
+        android:text="@string/fav_text_back_hint"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/back_button"
         app:layout_constraintTop_toBottomOf="@+id/results_text_view" />

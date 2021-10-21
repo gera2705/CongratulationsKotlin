@@ -51,15 +51,13 @@ class CalendarFragment : Fragment() {
 
         setResultText(congratulationList!! , description!!)
 
-        Log.d("TAG" , description.toString())
+        setCounter()
 
         initListeners()
 
         initPagesButtons()
 
         initCalendarListener()
-
-
     }
 
     private fun getDescriptions(){
@@ -81,11 +79,7 @@ class CalendarFragment : Fragment() {
                currentDatesNumber++
             }
             setResultText(congratulationList!!, description!!)
-            binding.resultCounter?.text = getString(
-                R.string.counter_text,
-                currentDatesNumber,
-                description!!.size
-            )
+            setCounter()
         }
 
         binding.backDescriptionArrowImageButton?.setOnClickListener {
@@ -94,24 +88,14 @@ class CalendarFragment : Fragment() {
                 currentDatesNumber--
             }
             setResultText(congratulationList!!, description!!)
-            binding.resultCounter?.text = getString(
-                R.string.counter_text,
-                currentDatesNumber,
-                description!!.size
-            )
 
+            setCounter()
         }
     }
 
     private fun initCalendarListener(){
 
         binding.calendar?.setOnDateChangeListener { view, year, month, dayOfMonth ->
-
-            binding.resultCounter?.text = getString(
-                R.string.counter_text,
-                currentDatesNumber,
-                description!!.size
-            )
 
             date = (month + 1).toString() + "/" + dayOfMonth + "/" + year.toString().substring(2)
             currentDatesNumber = 1
@@ -125,11 +109,19 @@ class CalendarFragment : Fragment() {
 
             setResultText(congratulationList!!, description!!)
 
-            Log.d("TAG" , congratulationList.toString() )
+            setCounter()
 
             initPagesButtons()
 
         }
+    }
+
+    private fun setCounter(){
+        binding.resultCounter?.text = getString(
+            R.string.counter_text,
+            currentDatesNumber,
+            description!!.size
+        )
     }
 
     private fun setResultText(
@@ -171,5 +163,4 @@ class CalendarFragment : Fragment() {
             findNavController().popBackStack()
         }
     }
-
 }

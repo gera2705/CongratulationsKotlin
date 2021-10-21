@@ -92,6 +92,4 @@ class AddFragment : Fragment() {
             datePickerDialog.show()
         }
     }
-
-
 }

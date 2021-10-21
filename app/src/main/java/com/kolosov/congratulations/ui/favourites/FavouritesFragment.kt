@@ -33,7 +33,6 @@ class FavouritesFragment : Fragment() {
         loadData(db)
 
         initListeners()
-
     }
 
     private fun initListeners() {
