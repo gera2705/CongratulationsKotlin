@@ -1,5 +1,6 @@
 package com.kolosov.congratulations.ui.home
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,13 +8,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.kolosov.congratulations.MainActivity
 import com.kolosov.congratulations.R
 import com.kolosov.congratulations.data.CongratulationDataBase
+import com.kolosov.congratulations.databinding.ActivityMainBinding
 import com.kolosov.congratulations.databinding.HomeFragmentBinding
 import com.kolosov.congratulations.ui.utils.CustomDateFormat
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType
 import com.smarteist.autoimageslider.SliderAnimations
 import com.smarteist.autoimageslider.SliderView
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence
+import uk.co.deanwild.materialshowcaseview.ShowcaseConfig
 
 class HomeFragment : Fragment() {
 
@@ -64,6 +69,48 @@ class HomeFragment : Fragment() {
 
         binding.smallButton4?.setOnClickListener {
             smallCardAction(getString(R.string.home_card_four_text))
+        }
+
+        binding.questionButton?.setOnClickListener {
+            val config = ShowcaseConfig()
+            config.maskColor = Color.BLUE
+            config.contentTextColor
+
+            val sequence = MaterialShowcaseSequence(requireActivity())
+
+            sequence.setConfig(config)
+
+            sequence.addSequenceItem(
+                binding.homeImageSlider,
+                "Здесь находится информация о всех праздников сегодня!\nВы можете листать этот список вправо и влево!",
+                "ПОНЯТНО"
+            )
+
+            sequence.addSequenceItem(
+                binding.homeSearchButton,
+                "Нажав на эту кнопку, Вы можете приступить к поиску поздравления!",
+                "ПОНЯТНО"
+            )
+
+            sequence.addSequenceItem(
+                binding.homeAddButton,
+                "Нажав на эту кнопку, Вы можете добавить свою личную значимую дату!",
+                "ПОНЯТНО"
+            )
+
+            sequence.addSequenceItem(
+                binding.homeHorizontalScroll,
+                "Тут вы можете воспользоваться быстрым поиском нажав на карточку с нужным названием! Вы можете прокручивать список карточек!",
+                "ПОНЯТНО"
+            )
+
+            sequence.addSequenceItem(
+                this.activity?.findViewById(R.id.menu_navigation),
+                "Это меню приложения с помощью которого вы можете переключаться между разделами приложения!", "ПОЕХАЛИ!"
+            )
+
+            //sequence.singleUse("wallet_info")
+            sequence.start()
         }
     }
 

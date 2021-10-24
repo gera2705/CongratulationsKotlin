@@ -130,6 +130,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/home_subtitle">
 
                 <HorizontalScrollView
+                    android:id="@+id/home_horizontal_scroll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scrollbarStyle="outsideInset"

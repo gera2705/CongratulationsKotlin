@@ -10,7 +10,7 @@ import com.kolosov.congratulations.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by viewBinding(ActivityMainBinding::bind)
+   private val binding by viewBinding(ActivityMainBinding::bind)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

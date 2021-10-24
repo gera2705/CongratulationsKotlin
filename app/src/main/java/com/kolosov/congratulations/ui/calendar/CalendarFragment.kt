@@ -53,7 +53,7 @@ class CalendarFragment : Fragment() {
 
         setCounter()
 
-        initListeners()
+        initListeners(congratulationList!!)
 
         initPagesButtons()
 
@@ -158,9 +158,17 @@ class CalendarFragment : Fragment() {
         binding.calendarResultText?.text = ss
     }
 
-    private fun initListeners() {
+    private fun initListeners(congratulationsOnDate: List<Congratulation>) {
         binding.logo?.setOnClickListener {
             findNavController().popBackStack()
+        }
+
+        binding.searchButtonOnCalendar?.setOnClickListener {
+            val action : CalendarFragmentDirections.ActionCalendarFragmentToSearchFragment =
+                CalendarFragmentDirections.actionCalendarFragmentToSearchFragment()
+            action.holidayName = congratulationsOnDate[currentDatesNumber-1].name
+
+            findNavController().navigate(action)
         }
     }
 }
